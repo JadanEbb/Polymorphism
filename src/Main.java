@@ -1,3 +1,5 @@
+//https://github.com/JadanEbb/Polymorphism.git
+
 public class Main {
 
     public static void main(String[] args) {
@@ -37,29 +39,22 @@ public class Main {
 
         BSU_Member[] member = new BSU_Member[10];
 
-        BSU_Member B1, B2;
-        //Creating an object of student type and storing the reference in a BSU_Member type variable "Member".
-        B1 = new Student ();
-        B2 = new Instructor();
-
-        member[0] = B1;
-        member[1] = B2;
-
-        System.out.println("====================");
-
-        for (int i = 2; i < 10; i++) {
-            member[i] = new BSU_Member();
-        }
+        member[0] = new Student(101, 20, "Alice", 'F', "Student", 3.8, Arturo.enrolled_courses);
+        member[1] = new Instructor(201, 45, "Dr. Smith", 'M', "Faculty", "Computer Science");
+        member[2] = new Student(102, 22, "Bob", 'M', "Student", 3.5, Arturo.enrolled_courses);
+        member[3] = new Instructor(202, 50, "Dr. Taylor", 'F', "Faculty", "Mathematics");
+        member[4] = new BSU_Member();
+        member[5] = new Student(103, 19, "Charlie", 'M', "Student", 3.2, Arturo.enrolled_courses);
+        member[6] = new Instructor(203, 38, "Prof. Davis", 'M', "Faculty", "Physics");
+        member[7] = new BSU_Member();
+        member[8] = new Student(104, 21, "Diana", 'F', "Student", 3.9, Arturo.enrolled_courses);
+        member[9] = new Instructor(204, 41, "Dr. Wilson", 'F', "Faculty", "Chemistry");
 
         System.out.println("======================");
 
         for (int i = 0; i < 10; i++) {
             member[i].display_Information();
         }
-
-
-
-
     }
 }
 
