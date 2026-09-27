@@ -47,7 +47,7 @@ public class COSC113 extends Course{
 
 
     // IMPORTANT! Method Overriding: Defining a method with the same method signature from the parent class
-    @Override
+//    @Override
     public void display_Course_info(){
 //lab work use super attribute name inside a print statement
         super.display_Course_infromation();
